@@ -234,24 +234,6 @@ function TaskDashboard({ username, onLogout, darkMode, onToggleDarkMode }) {
     taskCounts[`category-${category}`] = tasks.filter((t) => t.category === category).length
   })
 
-  const exportTasks = () => {
-    try {
-      const dataStr = JSON.stringify(tasks, null, 2)
-      const dataUri = "data:application/json;charset=utf-8," + encodeURIComponent(dataStr)
-      const exportFileDefaultName = `tasks-${new Date().toISOString().split("T")[0]}.json`
-      const linkElement = document.createElement("a")
-      linkElement.setAttribute("href", dataUri)
-      linkElement.setAttribute("download", exportFileDefaultName)
-      linkElement.click()
-
-      toast.success(`Tasks exported successfully! 📁 (${tasks.length} tasks)`, {
-        duration: 4000,
-      })
-    } catch (error) {
-      toast.error("Failed to export tasks. Please try again.")
-    }
-  }
-
   return (
     <div className="dashboard">
       {/* Header */}
