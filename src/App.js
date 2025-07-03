@@ -71,7 +71,7 @@ function App() {
   return (
     <div className={`app ${darkMode ? "dark" : ""}`}>
       <Toaster
-        position="bottom-right"
+        position="top-center"
         toastOptions={{
           duration: 3000,
           style: {
