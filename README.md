@@ -65,7 +65,6 @@ A modern, responsive task management application built with React.js that helps 
 - *State Management:* React built-in state (useState, useEffect)
 - *Data Persistence:* Browser localStorage API
 - *Notifications:* react-hot-toast
-- *Icons:* Lucide React (SVG icons)
 - *Build Tool:* Create React App
 - *Package Manager:* npm
 
@@ -90,9 +89,7 @@ A modern, responsive task management application built with React.js that helps 
 - ✅ Theme switching functionality
 - ✅ Search and filter implementation
 - ✅ Sorting algorithms
-- ✅ Export functionality
 - ✅ Toast notifications
-- ✅ Modal dialogs
 
 ## 🔗 Live Demo
 
